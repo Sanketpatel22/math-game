@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./Singlequize.css";
+import "./singlequize.css";
 import { doc, updateDoc, increment } from "firebase/firestore";
 import { db } from "../firebase";
 import pic4 from "./images/pic4.jpg";
