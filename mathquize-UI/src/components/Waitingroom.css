@@ -1,0 +1,84 @@
+.waiting-container {
+  background: #6a1b1b;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.coins-gems {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.stage-name .stage-box {
+  background: #f7c83a;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.stage-box h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #1a237e;
+}
+
+.stage-box span {
+  font-size: 16px;
+  color: #333;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.player-card {
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 2px solid white;
+}
+
+.level {
+  font-size: 14px;
+  color: yellow;
+  margin: 5px 0;
+}
+
+.vs {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fdd835;
+}
+
+.tip-text {
+  font-size: 14px;
+  margin-top: 40px;
+  color: #eee;
+}
+
+.game-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}

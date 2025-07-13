@@ -1,0 +1,121 @@
+.deposit-container {
+  background-color: #2b0f0f;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.deposit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.history-link {
+  cursor: pointer;
+  color: gold;
+  font-size: 14px;
+}
+
+.amount-section {
+  background-color: #3a1818;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.amount-btn {
+  padding: 12px 0;
+  border-radius: 10px;
+  background-color: #522020;
+  border: none;
+  color: yellow;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.amount-btn.active {
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+}
+
+.manual-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d0c0c;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.manual-input input {
+  background: transparent;
+  border: none;
+  color: yellow;
+  width: 100px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.manual-input input:focus {
+  outline: none;
+}
+
+.clear-btn {
+  margin-left: 10px;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: gold;
+  color: #2b0f0f;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qr-section {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.qr-section h4 {
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.upi-text {
+  font-size: 12px;
+  color: yellow;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+

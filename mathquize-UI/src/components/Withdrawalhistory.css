@@ -1,0 +1,35 @@
+.wh-page{
+  background:#2b0f0f;
+  min-height:100vh;
+  color:#fff;
+  padding:20px;
+  font-family:"Segoe UI",sans-serif;
+}
+.wh-header{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+.wh-back{cursor:pointer;font-size:22px;color:gold;}
+.wh-msg{text-align:center;margin-top:40px;}
+
+.wh-list{display:flex;flex-direction:column;gap:15px;}
+
+.wh-card{
+  background:#3a1818;
+  padding:15px;
+  border-radius:15px;
+  box-shadow:0 0 5px rgba(255,255,255,.05);
+}
+.wh-top{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:8px;
+}
+.wh-label{background:#a20;padding:2px 8px;border-radius:5px;font-size:12px;}
+
+.wh-status{font-weight:bold;font-size:14px;}
+.wh-status.pending {color:orange;}
+.wh-status.success {color:lightgreen;}
+.wh-status.failed  {color:red;}

@@ -1,0 +1,124 @@
+.wallet-page {
+  text-align: center;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #2b0f0f;
+  color: white;
+  min-height: 100vh;
+}
+
+.wallet-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.balance-section {
+  background: #3a1818;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wallet-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.wallet-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.wallet-chart {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.wallet-block {
+  background: #522020;
+  border-radius: 10px;
+  padding: 15px;
+  width: 40%;
+}
+
+.transfer-btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.action-buttons button {
+  background-color: #3f1a1a;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wallet-back {
+  background: transparent;
+  color: #ffd54f;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Back button (already existed) */
+.wallet-back{
+  background:none;
+  border:none;
+  font-size:22px;
+  color:#ffd54f;
+  cursor:pointer;
+  margin:10px 0 0 10px;
+}
+
+/* Summary grid */
+.wallet-summary-grid{
+  display:flex;
+  gap:12px;
+  margin:25px 0;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* Each box */
+.wallet-box{
+  width:110px;
+  border-radius:12px;
+  padding:14px 10px;
+  text-align:center;
+  color:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,0.25);
+}
+
+.wallet-box h3{
+  margin:0;
+  font-size:20px;
+}
+
+.wallet-box p{
+  margin-top:4px;
+  font-size:13px;
+}
+
+/* Colors */
+.deposit { background:#1976d2; }   /* blue */
+.winning { background:#2e7d32; }   /* green */
+.total   { background:#f9a825; color:#1a1a1a; } /* gold */

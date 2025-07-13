@@ -1,0 +1,29 @@
+.info-box {
+  background:#381616;
+  border-radius:12px;
+  padding:18px 20px;
+  margin-top:25px;
+  color:#ffcc80;
+  font-size:20px;
+}
+
+.info-box ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.info-box li {
+  position:relative;
+  margin-bottom:8px;
+  line-height:1.4;
+}
+
+.info-box li::before {
+  content:"◆";
+  position:absolute;
+  left:-18px;
+  top:3px;
+  font-size:10px;
+  color:#ffcd38;
+}

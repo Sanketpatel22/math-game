@@ -1,0 +1,301 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.carousel-box {
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scrollCarousel 9s infinite;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scrollCarousel {
+  0%, 33%   { transform: translateX(0%); }
+  34%, 66%  { transform: translateX(-100%); }
+  67%, 100% { transform: translateX(-200%); }
+}
+
+.page-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #612e2e;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b0f0f;
+  color: #f0c20d;
+  padding: 15px 30px;
+  border-bottom: 4px solid #371212;
+  position: relative;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #2b0f0f;
+}
+
+/* Profile Icon */
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #612e2e;
+  color: white;
+  font-weight: bold;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.profile-circle:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown */
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.profile-dropdown p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Optional button */
+.logout-btn {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b52a35;
+}
+
+/* Tournaments Section */
+.tournament-container {
+  max-width: 600px;
+  /* margin: 40px auto; */
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.tournament-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #612e2e;
+}
+
+.tournament-card {
+  border: 2px solid #2b0f0f;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #f9f3e3;
+  transition: 0.3s;
+  box-shadow:#612e2e;
+}
+
+.compo1{
+  background-color: #f9f3e3;
+  color: #2b0f0f;
+  padding: 3px;
+}
+
+.compo2 , .compo3{
+background-color: #f9f3e3;
+padding : 2px;
+color:#4e1f1f;
+}
+
+.tournament-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.multiplayer-btn {
+  padding: 10px 20px;
+  background-color: #f0c20d;
+  color: #2b0f0f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: #371212;
+}
+
+.multiplayer-btn :hover {
+  background-color: #dab200;
+}
+
+/* Already existing CSS should be kept */
+
+.username-input {
+  padding: 6px;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.save-btn, .edit-btn {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  background-color: #17a2b8;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.edit-btn:hover {
+  background-color: #138496;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.footer-nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#2b0f0f;
+  display:flex;
+  justify-content:space-around;
+  padding:10px 0;
+  box-shadow:0 -2px 6px rgba(0,0,0,.4);
+}
+
+.footer-nav button{
+  background:none;
+  border:none;
+  font-size:26px;
+  color:#fff;
+  cursor:pointer;
+}
+
+
+
+
+/* FAQ container */
+.faq-section{
+  margin:30px auto;
+  max-width:600px;
+  background:#381616;
+  padding:24px 22px;
+  padding-bottom: 50px;
+  border-radius:12px;
+  color:#ffcc80;
+  font-family:"Segoe UI",sans-serif;
+}
+
+/* heading */
+.faq-title{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:25px;
+}
+
+/* each question */
+.faq-item{
+  margin-top:12px;
+}
+
+/* hide checkbox */
+.faq-item input[type="checkbox"]{
+  display:none;
+}
+
+/* question line */
+.faq-item label{
+  display:block;
+  cursor:pointer;
+  position:relative;
+  padding-left:22px;
+  font-weight:600;
+}
+
+/* ➕ / ➖ icon */
+.faq-item label::before{
+  content:"+";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#ffcd38;
+  font-size:20px;
+  line-height:1;
+}
+
+/* answer text (hidden by default) */
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.3s ease;
+  margin:4px 0 0;
+  padding-left:22px;
+  line-height:1.4;
+}
+
+/* when checkbox checked → show answer, change icon */
+.faq-item input:checked + label::before{ content:"-"; }
+.faq-item input:checked ~ .faq-answer{ max-height:200px; }

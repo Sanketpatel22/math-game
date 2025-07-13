@@ -1,0 +1,72 @@
+.loginpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #491c1c;
+  padding-bottom:350px ;
+}
+
+/* -------- Form Card -------- */
+#form {
+  width: 300px;
+  background: #381616;           /* card maroon */
+  padding: 28px 24px 34px;
+  border-radius: 14px;
+  margin-top: 200px ;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#login {
+  text-align: center;
+  margin: 0 0 10px;
+  color: #ffcd38;                /* yellow accent */
+  font-size: 24px;
+}
+
+/* -------- Inputs -------- */
+#email, #pass {
+  padding: 10px 12px;
+  border: 1px solid #544040;
+  border-radius: 10px;
+  background: #2a2a3a;           /* dark grey */
+  color: #fff;
+  font-size: 14px;
+}
+#email:focus, #pass:focus {
+  outline: none;
+  border-color: #1976d2;         /* blue accent */
+}
+
+/* -------- Submit Button -------- */
+#submit {
+  padding: 12px 0;
+  background: #1976d2;           /* blue button */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+#submit:hover {
+  background: #2196f3;
+}
+
+/* -------- Links -------- */
+#forgot, #register a {
+  color: #ffcd38;
+  text-decoration: none;
+  font-size: 14px;
+}
+#forgot:hover, #register a:hover {
+  text-decoration: underline;
+}
+.newuse{
+  color:white
+}
+
+/* -------- Error Text (inline style already sets red) -------- */

@@ -1,0 +1,74 @@
+.regipage{
+    background-color:#491c1c ;
+    padding-top: 110px ;
+    padding-bottom : 300px;
+}
+
+
+#regiform {
+  width: 320px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #2b0f0f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#register-title {
+  text-align: center;
+  color: #ffcd38;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#submit {
+  background-color: #ffcd38;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #2563eb;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
+#login-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+#login-link a {
+  color: #ffcd38;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#login-link a:hover {
+  text-decoration: underline;
+}
+.log{
+    color: white;
+}

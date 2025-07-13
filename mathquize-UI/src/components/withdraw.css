@@ -1,0 +1,76 @@
+.withdraw-page {
+  background:#2b0f0f;
+  min-height:100vh;
+  color:#fff;
+  font-family:"Segoe UI",sans-serif;
+  padding:20px;
+}
+
+.wd-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+  font-size:18px;
+}
+.back{cursor:pointer;font-size:22px;}
+.hist-link{cursor:pointer;color:gold;font-size:14px;}
+
+.wd-card{
+  background:#3a1818;
+  border-radius:15px;
+  padding:20px;
+}
+.wd-label{
+  background:#522020;
+  padding:10px;
+  border-radius:25px;
+  text-align:center;
+  margin-bottom:15px;
+}
+.balance-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+  font-size:14px;
+}
+.all-btn{
+  background:#433;
+  border:none;
+  color:gold;
+  padding:3px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.amount-input,
+.upi-input{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:10px;
+  border:none;
+  background:#1d0c0c;
+  color:yellow;
+  font-size:16px;
+}
+.wd-error{color:#ff6b6b;font-size:14px;margin-top:5px;}
+
+.withdraw-btn{
+  width:100%;
+  padding:12px;
+  background:linear-gradient(90deg,#f6b40d,#f19209);
+  border:none;
+  border-radius:25px;
+  color:#2b0f0f;
+  font-weight:bold;
+  margin:16px 0;
+  cursor:pointer;
+}
+.wd-notes{
+  list-style-type:disc;
+  font-size:12px;
+  line-height:1.5;
+  padding-left:20px;
+  color:#ffc58c;
+}
