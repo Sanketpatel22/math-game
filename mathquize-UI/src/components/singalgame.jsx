@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Singlegame.css";
+import "./singlegame.css";
 import { useNavigate } from "react-router-dom";
 import { doc, updateDoc, increment } from "firebase/firestore";
 import { db } from "../firebase";
