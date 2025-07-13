@@ -11,7 +11,6 @@ import Register from "./components/registration";
 import ForgotPassword from "./components/forgotpassword";
 import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-import GameRoom from "./components/Waitingroom";
 import Wallet from "./components/Wallet";
 import Deposit from "./components/Deposit";
 import DepositHistory from "./components/Deposithistory";

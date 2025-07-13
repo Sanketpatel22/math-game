@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import "./gamecard.css";
+import "./Gamecard.css";
 import singlegame from "./images/singlegame.png";
 
 const BackToTournaments = () => {
