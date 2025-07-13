@@ -47,7 +47,7 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path="/tournament"
+          path="/"
           element={
             currentUser ? (
               <TournamentList user={currentUser} setUser={setCurrentUser} />
