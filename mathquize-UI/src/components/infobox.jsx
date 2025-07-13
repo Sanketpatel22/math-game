@@ -1,5 +1,5 @@
 import React from "react";
-import "./InfoBox.css";
+import "./ifoBox.css";
 
 /**
  * InfoBox
