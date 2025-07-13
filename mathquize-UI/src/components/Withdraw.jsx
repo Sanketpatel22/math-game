@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Withdraw.css";
+import "./withdraw.css";
 import { useNavigate } from "react-router-dom";
 import { doc, updateDoc, getDoc, collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
