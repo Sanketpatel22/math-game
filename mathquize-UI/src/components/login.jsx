@@ -26,7 +26,7 @@ const Login = ({ setUser }) => {
       const userDoc = await getDoc(doc(db, "users", user.uid));
       if (userDoc.exists()) {
         setUser(userDoc.data());
-        navigate("/tournament");
+        navigate("/");
       } else {
         setError("User record not found.");
       }
