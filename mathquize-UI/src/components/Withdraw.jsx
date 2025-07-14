@@ -31,8 +31,8 @@ const Withdraw = ({ user, setUser }) => {
       return setError("Enter a valid UPI ID (e.g. name@bank)");
     }
 
-    if (Number(amount) < 100) {
-      return setError("Minimun 100 Rupees withdraval ");
+    if (Number(amount) < 60) {
+      return setError("Minimun 60 Rupees withdraval ");
     }
 
     try {
@@ -112,9 +112,7 @@ const Withdraw = ({ user, setUser }) => {
 
         {/* helpful notes (static) */}
         <ul className="wd-notes">
-          <li>Need to bet ₹0.00 to be able to withdraw</li>
           <li>Withdrawal time 00:00 – 23:59</li>
-          <li>Daily remaining withdrawals: 3</li>
           <li>Withdrawal range ₹110 – ₹500 000</li>
           <li>
             Please confirm your beneficiary account information before

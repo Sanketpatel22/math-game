@@ -13,19 +13,19 @@ import {
 import { db } from "../firebase"; // make sure this is correct
 
 const Deposit = ({ user, setUser }) => {
-  const [selectedAmount, setSelectedAmount] = useState(100);
+  const [selectedAmount, setSelectedAmount] = useState(50);
   const [showQR, setShowQR] = useState(false);
-  const [amount, setAmount] = useState(100); // default amount
+  const [amount, setAmount] = useState(50); // default amount
   const [utr, setUtr] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const presetAmounts = [
-    100, 200, 300, 500, 1000, 3000, 5000, 8000, 10000, 20000, 30000, 40000,
+    50, 100, 200, 300, 500, 1000, 3000, 5000, 8000, 10000, 20000, 30000,
   ];
 
   const handleDeposit = () => {
-    if (!selectedAmount || selectedAmount <= 0) {
+    if (!selectedAmount || selectedAmount <= 0 || selectedAmount < 50) {
       alert("Please enter a valid amount.");
       return;
     }

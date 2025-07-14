@@ -20,7 +20,7 @@ const SelectEntry = ({ user, setUser }) => {
   const walletNotes = [
     "in every game if you win then get 1.7x money",
     "in every game 12 question and 15sec ",
-    "you have to give 11 or 12 asnswer right",
+    "you have to answer all questions correctly to win",
   ];
 
   const handlePlay = async () => {

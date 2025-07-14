@@ -72,7 +72,7 @@ const SingleQuiz = ({ user, setUser }) => {
       }
     }
 
-    setTimeout(() => navigate("/wallet"), 3000);
+    setTimeout(() => navigate("/wallet" ,{replace:true}), 3000);
   };
 
   if (!stake) {
