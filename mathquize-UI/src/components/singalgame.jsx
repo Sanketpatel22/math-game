@@ -15,7 +15,7 @@ const SelectEntry = ({ user, setUser }) => {
   const [stake, setStake] = useState(10); // default ₹10
   const [error, setError] = useState("");
 
-  const stakes = [10, 20, 50, 100, 200, 500];
+  const stakes = [5, 10, 20, 50, 100, 200];
 
   const walletNotes = [
     "in every game if you win then get 1.7x money",
