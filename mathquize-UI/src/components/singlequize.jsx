@@ -6,9 +6,9 @@ import { db } from "../firebase";
 import pic4 from "./images/pic4.jpg";
 import pic5 from "./images/pic5.jpg";
 
-const TOTAL_Q = 13;
+const TOTAL_Q = 12;
 const TIMER_SECONDS = 15;
-const WIN_THRESHOLD = 13;
+const WIN_THRESHOLD = 12;
 
 const SingleQuiz = ({ user, setUser }) => {
   const { state } = useLocation();
