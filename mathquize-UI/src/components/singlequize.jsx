@@ -109,7 +109,7 @@ const SingleQuiz = ({ user, setUser }) => {
         </div>
       </div>
 
-      <div className="carousel-box">
+      <div className="carousel-box-1">
         <div className="carousel-track">
           <img src={pic4} alt="slide1" />
           <img src={pic5} alt="slide2" />
