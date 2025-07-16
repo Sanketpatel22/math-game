@@ -3,6 +3,7 @@ import { db } from "../firebase";
 import { collection, doc, getDocs, orderBy, query } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
+
 const DepositHistory = ({ user }) => {
   const [deposits, setDeposits] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -33,16 +34,17 @@ const DepositHistory = ({ user }) => {
   }, [user.uid]);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2 style={{ textAlign: "center" }}>💳 Deposit History</h2>
+    <div style={{ padding: "20px" , backgroundColor :"#2b0f0f" , paddingBottom : "600px"}} >
+      <h2 style={{ textAlign: "center" , color:"white" }}>💳 Deposit History</h2>
       <button
         onClick={() => navigate("/wallet")}
         style={{
           marginBottom: "20px",
-          backgroundColor: "#eee",
+          backgroundColor: "#e7dc19ff",
           padding: "8px 15px",
           borderRadius: "5px",
           cursor: "pointer",
+
         }}
       >
         ← Back to Wallet
