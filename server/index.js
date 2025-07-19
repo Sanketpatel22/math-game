@@ -1,54 +1,43 @@
-const express = require("express");
-const http = require("http");
-const { Server } = require("socket.io");
-const cors = require("cors");
-
+const express = require('express');
+const http = require('http');
+const { Server } = require('socket.io');
 const app = express();
-app.use(cors());
-
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"]
+    origin: '*',
+    methods: ['GET', 'POST']
   }
 });
 
 let waitingPlayer = null;
 
-io.on("connection", (socket) => {
-  console.log("✅ User connected:", socket.id);
+io.on('connection', (socket) => {
+  console.log('Player connected:', socket.id);
 
   if (waitingPlayer) {
-    const room = `room-${waitingPlayer.id}-${socket.id}`;
-    socket.join(room);
-    waitingPlayer.join(room);
+    const player1 = waitingPlayer;
+    const player2 = socket;
 
-    io.to(room).emit("startGame", {
-      room,
-      players: [waitingPlayer.id, socket.id]
-    });
+    player1.emit('startGame', { opponentId: player2.id });
+    player2.emit('startGame', { opponentId: player1.id });
 
     waitingPlayer = null;
   } else {
     waitingPlayer = socket;
-    socket.emit("waiting", "Waiting for another player...");
+    socket.emit('waitingForPlayer');
   }
 
-  socket.on("answer", ({ room, playerId }) => {
-    io.to(room).emit("winner", playerId);
-  });
-
-  socket.on("disconnect", () => {
-    console.log("❌ User disconnected:", socket.id);
-    if (waitingPlayer && waitingPlayer.id === socket.id) {
+  socket.on('disconnect', () => {
+    if (waitingPlayer === socket) {
       waitingPlayer = null;
     }
   });
 });
 
-const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
 });
+
+
